@@ -1,0 +1,433 @@
+body {
+    background: radial-gradient(circle at top left, #F4C54210 0%, #0A0A0A 50%);
+    color: #FFFFFF;
+    font-family: Oswald, sans-serif;
+}
+
+header #logo {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    display: block;
+}
+
+header {
+    text-align: center;
+}
+
+header a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header a:link, a:visited {
+    color: #E10600;
+}
+
+header a:hover, a:active {
+    color: #F4C542;
+}
+
+.slideshow{
+      overflow: hidden;
+      margin-top: 10px;
+    }
+    
+ .slideshow figure {
+      position: relative;
+      width: 400%;
+      margin: 0;
+      padding: 0;
+      left: 0;
+      animation: 10s slideshow ease-in-out infinite;
+    }
+
+ .slideshow img {
+      width: 23%;
+      height: 500px;
+      float: left;
+      padding: 0 1%
+    }
+
+ @keyframes slideshow{
+      0% {
+        left: 0%;
+      }
+      30% {
+        left: 0%;
+      }
+      35% {
+        left: -100%;
+      }
+      65%{
+        left: -100%;
+      }
+      70%{
+        left: -200%;
+      }
+      97% {
+        left: -200%;
+      }
+      102% {
+        left: -300%;
+      }
+    
+    }
+
+.image-container {
+    position: relative;
+    width: 20%;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.button-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image-button {
+   background-color: #0A0A0A;
+   outline: none;
+   border: 5px solid #0A0A0A;
+   font-color: #FFFFFF;
+   font-size: 18px;
+   font-weight: bold;
+   text-decoration: none;
+   letter-spacing: 0.05em;
+   transition: background-color 0.25s;
+   transition: color 0.25s;
+   position: absolute;
+   bottom: 60px;
+}
+
+.image-button:hover {
+    cursor: pointer;
+    background-color: #1E1E1E;
+    border: 5px solid #1E1E1E;
+}
+.image-overlay a:link, a:visited {
+    color: #E10600;
+}
+
+.image-overlay a:hover, a:active {
+    color: #F4C542;
+}
+
+.image-overlay:hover {
+    backdrop-filter: blur(20px);
+    opacity: 1;
+}
+.image-container p {
+    position: absolute;
+    top: 50px;
+    color: #FFFFFF;
+    font-size: 16px;
+    z-index: 3;
+    text-align: center;
+}
+.image-container h2 {
+    position: absolute;
+    top: 20px;
+    color: #FFFFFF;
+    font-size: 16px;
+    z-index: 3;
+    text-align: center;
+}
+.image-container-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.gym-philosophy {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px 0;
+}
+
+.gym-philosophy-1 {
+    width: 40%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 5%;
+}
+
+.gym-philosophy-2 {
+    width: 60%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 10%;    
+}
+
+.gym-philosophy h1 {
+    color: #E10600
+}
+
+.gym-philosophy h2 {
+    color: #F4C542
+}
+
+.our-facility {
+    text-align: center;
+    margin: 50px 10% 0 10%;
+}
+
+.our-facility img {
+    width: 80%;
+    height: auto;
+    margin: 20px 0 0 0;
+}
+
+.index-coaches {
+    background: radial-gradient(circle at center, rgba(225, 7, 0, 0.336) 0%, #0A0A0A 80%);
+    padding: 40px 0;
+    display: flex;
+}
+
+.coach-philosophy {
+    width: 60%;
+    margin: 0 30px;
+    text-align: center;
+}
+.coach-profiles-button {
+   background-color: #0A0A0A;
+   outline: none;
+   border: 2px solid #0A0A0A;
+   font-color: #FFFFFF;
+   font-size: 24px;
+   font-weight: bold;
+   text-decoration: none;
+   letter-spacing: 0.05em;
+   transition: background-color 0.25s;
+   transition: color 0.25s;
+   position: relative;
+   padding-top; 30px;
+}
+
+.coach-profiles-button:link, .coach-profiles-button:visited {
+    color: #E10600;
+}
+
+.coach-profiles-button:hover, .coach-profiles-button:active {
+    color: #F4C542;
+}
+
+.coach-images {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.coach-image {
+    width: 200px;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #F4C542;
+}
+
+footer {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+}
+
+footer #logo {
+    width: 10vw;
+    height: auto;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+.visit-us { 
+    width: 40vw;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 20px;
+    gap: 10px;
+}
+
+.footer-links {
+    width: 60vw;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 100px;
+}
+
+footer a:link, a:visited {
+    color: #E10600;
+}
+
+footer a:hover, a:active {
+    color: #F4C542;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* Schedule Page Styles */
+
+.schedule {
+    text-align: center;
+    margin: 30px 0 20px 0;
+}
+
+.schedule img {
+    width: 70%;
+    height: auto;
+    margin: 10px 15%;
+}
+
+.coach-name {
+    text-align: center;
+    font-size: 35px;
+}
+
+.coach-bios {
+    text-align: center;
+    display: flex;
+}
+
+.coach-photos {
+    width: 20vw;
+    margin: 20px;
+}
+
+.coach-description {
+    width: 70vw;
+    text-align: left;
+    margin: auto;
+}
+
+.coach-photos img {
+    width: 15vw;
+    border-radius: 10px;
+}
+
+/* Membership Page Styles */
+
+.membership-info {
+    text-align: center;
+    margin: 30px 15%;
+}
+
+.membership-info .ul-box {
+    position: relative;
+    text-align: left;
+    width: 20vw;
+    left: 38%;
+}
+
+.membership-info h2 {
+    color: #E10600;
+}
+
+.membership-info h1 {
+    color: #F4C542;
+}
+
+.membership-info h3 {
+    color: #E10600;
+}
+
+.free-trial-button {
+   background-color: #303030;
+   outline: none;
+   border: 2px solid #303030;
+   font-color: #FFFFFF;
+   font-size: 24px;
+   font-weight: bold;
+   text-decoration: none;
+   letter-spacing: 0.05em;
+   transition: background-color 0.25s;
+   transition: color 0.25s;
+   position: relative;
+   padding-top; 30px;
+}
+
+.free-trial-button:link, .coach-profiles-button:visited {
+    color: #E10600;
+}
+
+.free-trial-button:hover, .coach-profiles-button:active {
+    color: #F4C542;
+    background-color: #202020;
+    border: 2px solid #202020;
+}
+
+/* Contact Page Styles */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto 100px auto;
+}
+
+.contact-form h1 {
+    text-align: center;
+    margin: 30px 0 20px 0;
+    color: #F4C542;
+}
+
+input {
+    width: 30%;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+textarea {
+    width: 50%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #d8d8d8;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+input:focus-within {
+    outline: none;
+    border: 2px solid #F4C542
+}
+
+textarea:focus-within {
+    outline: none;
+    border: 2px solid #F4C542
+}
