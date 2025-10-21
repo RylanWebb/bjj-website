@@ -213,7 +213,6 @@ header a:hover, a:active {
    background-color: #0A0A0A;
    outline: none;
    border: 2px solid #0A0A0A;
-   font-color: #FFFFFF;
    font-size: 24px;
    font-weight: bold;
    text-decoration: none;
@@ -224,11 +223,11 @@ header a:hover, a:active {
    padding-top; 30px;
 }
 
-.coach-profiles-button:link, .coach-profiles-button:visited {
+.coach-philosophy a:link, .coach-philosophy a:visited {
     color: #E10600;
 }
 
-.coach-profiles-button:hover, .coach-profiles-button:active {
+.coach-philosophy a:hover, .coach-philosophy a:active {
     color: #F4C542;
 }
 
@@ -300,6 +299,10 @@ footer a {
     margin: 30px 0 20px 0;
 }
 
+.schedule h1 {
+    color: #F4C542;
+}
+
 .schedule img {
     width: 70%;
     height: auto;
@@ -314,6 +317,10 @@ footer a {
 .coach-bios {
     text-align: center;
     display: flex;
+}
+
+.coach-bios h2 {
+    color: #F4C542;
 }
 
 .coach-photos {
